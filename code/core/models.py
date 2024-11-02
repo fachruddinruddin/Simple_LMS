@@ -50,7 +50,7 @@ class CourseContent(models.Model):
         verbose_name_plural = "Konten Matkul"
 
     def __str__(self) -> str:
-        return '['+self.course_id+"] "+self.name
+        return f"[{self.course_id.name}] {self.name}"
 
 
 class Comment(models.Model):
