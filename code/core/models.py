@@ -16,7 +16,7 @@ class Course(models.Model):
         verbose_name_plural = "daftar Courses"
 
     def __str__(self) -> str:
-        return self.name+" : "+self.price
+        return f"{self.name} - {self.teacher.username} - {str(self.price)}"
     
 ROLE_OPTIONS = [('std', "Siswa"), ('ast', "Asisten")]
 
